@@ -1,0 +1,24 @@
+""""Desarrollar un programa en Python que permite gestionar la información de las asignaturas que llevan un grupo de estudiantes.
+De cada estudiante se debe almacenar su nombre, su número de carnet, el número de asignaturas que lleva, así como la información de cada asignatura.
+De cada asignatura se debe almacenar la siguiente información:
+- Nombre de la asignatura (de tipo cadena de caracteres)
+- Número de créditos (de tipo entero)
+- Calificación obtenida (de tipo float)
+
+Para el control de las operaciones del programa se debe presentar al usuario el menú siguiente:
+
+***** MENÚ DE OPCIONES *****
+1. Ingresar un estudiante
+2. Ver todos los estudiantes
+3. Buscar un estudiante
+4. Guardar datos
+5. Cargar datos
+6. Salir
+Elija su opción: _
+
+Opción 1: Permite ingresar los datos de un nuevo estudiante. Para ello se debe utilizar una matriz (lista de listas), donde cada elemento es una lista que contiene la información de cada estudiante. Esta lista está compuesta por los datos siguientes: el nombre del estudiante, su número de carnet y una lista de diccionarios donde cada diccionario contiene la información de una asignatura.
+Opción 2: Permite ver un listado de todos los estudiantes ingresados con toda su información.
+Opción 3: Permite buscar un estudiante a través del número de carnet, imprimiendo el mensaje correspondiente de si se encontró o no.
+Opción 4: Permite guardar la información de todos los estudiantes en un archivo (serialización).
+Opción 5: Permite cargar los datos en memoria de los estudiantes que habían sido almacenados en el archivo (deserialización).
+Opción 6: Sirve para salir del programa."""
