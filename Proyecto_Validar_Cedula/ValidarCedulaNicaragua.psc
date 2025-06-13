@@ -65,7 +65,7 @@ SubProceso resultado <- EsNumero(cadena)
 	Definir resultado Como Logico;
 	resultado <- Falso;
 	Para i <- 1 Hasta Longitud(cadena)
-		Si (SubCadena(cadena, i, i) >= "0" Y SubCadena(cadena, i, i) <= "9") Entonces
+		Si ((SubCadena(cadena, i, i) >= "0") Y (SubCadena(cadena, i, i) <= "9")) Entonces
 			resultado <- Verdadero;
 		FinSi
 	FinPara
