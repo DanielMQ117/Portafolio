@@ -20,7 +20,7 @@ Proceso ValidarCedulaNicaragua
 		Escribir Sin Saltar " -> Ingrese cedula de identidad: ";
 		Leer cedula;
 		
-		Si (HoraActual() - tiempoInicial)  < 3 Entonces
+		Si (HoraActual() - tiempoInicial)  < 12 Entonces
 			
 			
 			longitudd <- Longitud(cedula);
@@ -59,30 +59,31 @@ Proceso ValidarCedulaNicaragua
 FinProceso
 
 
-SubProceso resultado <- ContarGuiones(texto)
+SubProceso resultado <- ContarGuiones(texxto)
 	Definir i, resultado Como Entero;
 	resultado <- 0;
-	Para i <- 1 Hasta Longitud(texto)
-		Si SubCadena(texto, i, i) = "-" Entonces
+	Para i <- 1 Hasta Longitud(texxto) Hacer
+		Si SubCadena(texxto, i, i) = "-" Entonces
 			resultado <- resultado + 1;
 		FinSi
 	FinPara
 FinSubProceso
 
-SubProceso resultado <- EsNumero(cadena)
+SubProceso resultado <- EsNumero(cadenaa)
 	Definir i Como Entero;
 	Definir resultado Como Logico;
 	resultado <- Falso;
-	Para i <- 0 Hasta Longitud(cadena) -1
-		Si ((SubCadena(cadena, i, i) >= "0") Y (SubCadena(cadena, i, i) <= "9")) Entonces
+	Para i <- 0 Hasta Longitud(cadenaa) -1 Hacer
+		Si ((SubCadena(cadenaa, i, i) >= "0") Y (SubCadena(cadenaa, i, i) <= "9")) Entonces
 			resultado <- Verdadero;
 		FinSi
+		
 	FinPara
 FinSubProceso
 
-SubProceso resultado <- EsLetra(caracter)
+SubProceso resultado <- EsLetra(caracterr)
 	Definir resultado Como Logico;
-	Si (caracter >= "A" Y caracter <= "Z") O (caracter >= "a" Y caracter <= "z") Entonces
+	Si (caracterr >= "A" Y caracterr <= "Z") O (caracterr >= "a" Y caracterr <= "z") Entonces
 		resultado <- Verdadero;
 	SiNo
 		resultado <- Falso;
