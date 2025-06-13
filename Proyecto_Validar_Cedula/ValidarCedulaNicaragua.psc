@@ -72,12 +72,11 @@ FinSubProceso
 SubProceso resultado <- EsNumero(cadenaa)
 	Definir i Como Entero;
 	Definir resultado Como Logico;
-	resultado <- Falso;
+	resultado <- Verdadero;
 	Para i <- 0 Hasta Longitud(cadenaa) -1 Hacer
-		Si ((SubCadena(cadenaa, i, i) >= "0") Y (SubCadena(cadenaa, i, i) <= "9")) Entonces
-			resultado <- Verdadero;
+		Si no ((SubCadena(cadenaa, i, i) >= "0") Y (SubCadena(cadenaa, i, i) <= "9")) Entonces
+			resultado <- Falso;
 		FinSi
-		
 	FinPara
 FinSubProceso
 
